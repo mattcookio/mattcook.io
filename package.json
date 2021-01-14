@@ -19,7 +19,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "create-cname": "echo \"mattcook.io\" > build/CNAME",
+    "build": "react-scripts build && react-snapshot && npm run create-cname",
+    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +45,9 @@
   },
   "devDependencies": {
     "@types/matter-js": "^0.14.8",
-    "node-sass": "^4.14.1"
+    "@types/react-snapshot": "^1.3.0",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "react-snapshot": "^1.3.0"
   }
 }
