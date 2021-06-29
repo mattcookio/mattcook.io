@@ -13,7 +13,7 @@ const App = () => {
       <div>
         <h1>matt cook</h1>
         <h5>developer, designer, creative</h5>
-        <h6>currently working at <a href="https://www.aais.com">Ad Astra</a></h6>
+        <h6>currently working at <a href="rfp360.com">RFP360</a>, formerly <a href="https://www.aais.com">Ad Astra</a></h6>
         <a href="mailto:hello@mattcook.io">hello@mattcook.io</a>
       </div>
     </div>
