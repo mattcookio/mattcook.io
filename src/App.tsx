@@ -11,10 +11,10 @@ const App = () => {
       minHeight: '100vh',
     }}>
       <div>
-        <h1>matt cook</h1>
+        <h1>matt cook (<a href="mailto:hello@mattcook.io">hello@mattcook.io</a>)</h1>
         <h5>developer, designer, creative</h5>
-        <h6>currently working at <a href="rfp360.com">RFP360</a>, formerly <a href="https://www.aais.com">Ad Astra</a></h6>
-        <a href="mailto:hello@mattcook.io">hello@mattcook.io</a>
+        <h6>cto and co-founder at hively (site coming soon)</h6>
+        <h6>former software engineer @ <a href="https://www.equipmentshare.com/">EquipmentShare</a>, <a href="https://rfp360.com">RFP360</a>, <a href="https://www.aais.com">Ad Astra</a></h6>
       </div>
     </div>
   );
