@@ -1,0 +1,31 @@
+# Svelte 5 + Bits UI + Storybook Project Guidelines
+
+This document outlines the coding standards and best practices for our Svelte project. Adhering to these guidelines ensures consistency, maintainability, and leverages the latest features of Svelte 5 and Bits UI.
+
+## Svelte 5 Usage
+
+-   **Embrace Runes:** Utilize Svelte 5 runes (`$state`, `$derived`, `$effect`, etc.) for managing component state and reactivity. Avoid legacy lifecycle functions (`onMount`, `onDestroy`, etc.) where runes provide a cleaner alternative.
+-   **Use Snippets for Content Projection:** Employ snippets passed as props for reusable UI fragments and content projection. Use the `@render` tag to render snippets. Avoid using the legacy `<slot>` element.
+-   **Event Handling:** Use standard `on:eventname` directives for event handling.
+-   **Props:** Define props using the `$props()` rune.
+-   **Avoid Deprecated Features:** Do not use features deprecated or discouraged in Svelte 5, such as reactive declarations (`$:`) for simple derivations (use `$derived` instead), the `export let` syntax for props (use `$props()`), or the `<slot>` element (use snippets and `@render`). Refer to the Svelte 5 migration guide for details.
+
+## Component Library: Bits UI
+
+-   **Primary UI Library:** Bits UI is the designated component library for this project. Prefer Bits UI components for common UI elements (buttons, dialogs, forms, etc.). Refer to the Bits UI documentation index for available components and usage patterns: [https://bits-ui.com/llms.txt](https://bits-ui.com/llms.txt)
+-   **Wrapper Components:** For each Bits UI component used (e.g., `Button`, `Dialog`), create a corresponding wrapper component within our project (e.g., `src/lib/components/ui/Button.svelte`, `src/lib/components/ui/Dialog.svelte`). This wrapper should import the necessary parts from Bits UI, apply project-specific Tailwind styles, and pass down all props (`{...$$props}`) and events (`{...$$events}`) to the underlying Bits UI elements. This promotes consistency and centralizes styling.
+-   **Composition:** Leverage Bits UI's headless nature to build custom, application-specific components by composing Bits UI primitives.
+-   **Styling:** Style Bits UI components using **Tailwind CSS 4.0 (CSS-only configuration)** utility classes, following the project's design system.
+
+## Testing with Storybook
+
+-   **Mandatory Stories:** All pages and larger, reusable components MUST have corresponding Storybook stories.
+-   **Coverage:** Stories should cover the primary states and variations of the component, including different prop combinations and user interactions where applicable.
+-   **Location:** Place story files (`*.stories.svelte` or `*.story.svelte`) alongside the component files they test.
+-   **Purpose:** Use Storybook for visual testing, component documentation, and demonstrating component usage in isolation.
+
+## General Best Practices
+
+-   **File Structure:** Follow the established project structure for organizing components, routes, stores, and utilities.
+-   **Code Style:** Adhere to the project's Prettier and ESLint configurations for consistent code formatting and style.
+-   **Accessibility:** Ensure components are accessible by following WAI-ARIA guidelines and using semantic HTML. Test with keyboard navigation and screen readers where appropriate.

@@ -1,0 +1,6 @@
+@theme {
+	/* --font-family-sans: 'Inter', theme('fontFamily.sans'); Removed Inter */
+	--font-family-mono: 'IBM Plex Mono', theme('fontFamily.mono'); /* Add IBM Plex Mono */
+}
+
+@import 'tailwindcss';
