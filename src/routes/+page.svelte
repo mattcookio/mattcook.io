@@ -1,4 +1,6 @@
 <script lang="ts">
+	// Import the email constants
+	import { emailObfuscated, emailRaw } from '$lib/resume';
 </script>
 
 <!-- About Section -->
@@ -93,7 +95,7 @@
 <!-- Connect Section -->
 <section class="space-y-4">
 	<h2 class="text-xl font-semibold text-gray-900 md:text-2xl">Connect</h2>
-	<div class="flex space-x-6">
+	<div class="flex flex-wrap gap-x-6 gap-y-2">
 		<a
 			href="https://github.com/mattcookio"
 			target="_blank"
@@ -105,6 +107,11 @@
 			target="_blank"
 			rel="noopener noreferrer"
 			class="text-lg text-blue-600 transition-colors duration-200 hover:text-blue-800">LinkedIn</a
+		>
+		<a
+			href={`mailto:${emailRaw}`}
+			class="text-lg text-blue-600 transition-colors duration-200 hover:text-blue-800"
+			>{@html emailObfuscated}</a
 		>
 	</div>
 </section>

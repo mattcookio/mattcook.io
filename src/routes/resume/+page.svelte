@@ -1,6 +1,9 @@
 <script lang="ts">
 	import {
+		emailObfuscated,
+		emailRaw,
 		isSkillsSection,
+		location,
 		resumeData,
 		type ResumeItem,
 		type ResumeSection,
@@ -117,7 +120,13 @@
 	/>
 </svelte:head>
 
-<h1 class="mb-6 text-3xl font-bold text-gray-900">Matt Cook</h1>
+<h1 class="mb-2 text-3xl font-bold text-gray-900">Matt Cook</h1>
+<div class="mb-6 flex flex-col text-lg text-gray-600 sm:flex-row sm:gap-4">
+	<span>{location}</span>
+	<a href={`mailto:${emailRaw}`} class="text-blue-600 hover:underline">
+		<span>{@html emailObfuscated}</span>
+	</a>
+</div>
 
 <!-- Action Buttons -->
 <div class="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2">

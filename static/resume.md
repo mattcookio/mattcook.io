@@ -1,4 +1,6 @@
 # Matt Cook
+Kansas City, MO
+[matt@studiosapiens.io](mailto:matt@studiosapiens.io)
 
 ## Education
 

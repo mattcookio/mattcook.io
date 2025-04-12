@@ -2,7 +2,9 @@ import { mdToPdf } from 'md-to-pdf';
 import fs from 'node:fs';
 import path from 'node:path';
 import {
+	emailRaw,
 	isSkillsSection,
+	location,
 	resumeData,
 	// Import types for clarity, assuming they are exported from resume.ts
 	type ResumeItem,
@@ -13,7 +15,7 @@ import {
 // Function to generate markdown content
 export function generateResumeMarkdown(): string | null {
 	try {
-		let md = '# Matt Cook\n\n'; // Main Title
+		let md = `# Matt Cook\n${location}\n[${emailRaw}](mailto:${emailRaw})\n\n`;
 
 		resumeData.forEach((section: ResumeSection | SkillsSection) => {
 			md += `## ${section.title}\n\n`;

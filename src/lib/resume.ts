@@ -20,6 +20,10 @@ export interface SkillsSection {
 	technologies: string[];
 }
 
+export const location = 'Kansas City, MO';
+export const emailRaw = 'matt@studiosapiens.io';
+export const emailObfuscated = 'matt<span>@</span>studiosapiens<span>.</span>io';
+
 // Type guard to differentiate sections
 export function isSkillsSection(section: ResumeSection | SkillsSection): section is SkillsSection {
 	return section.id === 'skills';
