@@ -34,6 +34,21 @@
 <section class="mb-16 md:mb-20">
 	<h2 class="mb-6 text-xl font-semibold text-gray-900 md:text-2xl">Projects</h2>
 	<ul class="space-y-6">
+		<!-- Project: mattcook.io -->
+		<li
+			class="rounded-lg border border-gray-200 p-4 transition-shadow duration-200 hover:shadow-md"
+		>
+			<h3 class="mb-1 text-lg font-semibold text-gray-800">mattcook.io</h3>
+			<p class="mb-2 text-gray-600">You're looking at it!</p>
+			<a
+				href="https://github.com/mattcookio/mattcook.io"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-sm text-blue-600 transition-colors duration-200 hover:text-blue-800"
+				>View on GitHub &rarr;</a
+			>
+		</li>
+
 		<!-- Project 1: pivot.nvim -->
 		<li
 			class="rounded-lg border border-gray-200 p-4 transition-shadow duration-200 hover:shadow-md"
