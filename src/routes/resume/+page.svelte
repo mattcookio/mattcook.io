@@ -76,7 +76,7 @@
 	let summaryVisible = $state(false);
 
 	// Pre-written AI Summary content
-	const aiSummary = `Matt Cook is an experienced Lead Software Engineer and Co-Founder/CTO with a strong background in full-stack development (TypeScript, Node, React, Svelte, Vue), software architecture, CI/CD, DevOps, and cloud services (AWS). He possesses expertise in building scalable multi-tenant solutions, optimizing databases (PostgreSQL), leading development teams, and managing integrations. Matt holds an MBA with a focus on Data Analytics and has demonstrated skills in technical leadership, problem-solving, and business development.`;
+	const aiSummary = `Matt Cook is a <strong>pragmatic</strong>, <strong>kind</strong>, <strong>enthusiastic</strong>, and <strong>customer-focused</strong> software engineer with a strong <strong>collaborative spirit</strong> and a <strong>passion for crafting simple, beautiful user experiences</strong>. He blends <strong>strong interpersonal skills</strong> with <strong>deep technical expertise</strong> (full-stack, architecture, cloud) to solve complex problems effectively within a team, always keeping the end-user in mind.`;
 
 	// Helper to generate item key used in the template and state generation
 	function getItemKey(sectionId: string, itemTitle: string): string {
@@ -140,7 +140,7 @@
 {#if summaryVisible}
 	<div class="mt-4 mb-6 rounded border border-gray-200 bg-gray-50 p-4 text-sm" transition:slide>
 		<h3 class="mb-2 font-semibold text-gray-800">AI Summary</h3>
-		<p class="text-gray-700">{aiSummary}</p>
+		<p class="text-gray-700">{@html aiSummary}</p>
 		{#if false}
 			<!-- TODO: Replace with dynamically generated summary if needed -->
 		{/if}

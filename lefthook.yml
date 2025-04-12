@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    generate-resume:
+      run: npx tsx scripts/generate-resume.ts && git add static/resume.md static/resume.pdf
+      # Optional: Only run if the source data changed and exists
+      glob: '{src/lib/resume.ts,src/lib/resume-generator.ts}'
+      # Optional: Stage generated files only if script succeeds
+      # stage_fixed: true # Not strictly needed if run command includes git add
