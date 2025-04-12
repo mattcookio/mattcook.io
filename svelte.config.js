@@ -9,8 +9,15 @@ const config = {
 			fallback: 'index.html',
 			precompress: false,
 			strict: true
-		})
+		}),
+		alias: {
+			// this will match a directory and its contents
+			// (`my-directory/x` resolves to `path/to/my-directory/x`)
+			$lib: 'src/lib',
+			'$lib/*': 'src/lib/*'
+		}
 	},
+
 	extensions: ['.svelte']
 };
 
