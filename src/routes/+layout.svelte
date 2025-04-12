@@ -1,7 +1,22 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 	import '../app.css';
 
 	let { children } = $props();
+
+	// Handle client-side SPA redirection after GitHub Pages 404 fallback
+	onMount(() => {
+		if (browser) {
+			const redirect = sessionStorage.getItem('redirect');
+			if (redirect) {
+				sessionStorage.removeItem('redirect');
+				// Use SvelteKit's goto for client-side navigation
+				goto('/' + redirect, { replaceState: true });
+			}
+		}
+	});
 </script>
 
 <div class="flex min-h-screen flex-col bg-white text-gray-800">
