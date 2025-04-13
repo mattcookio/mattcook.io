@@ -1,11 +1,20 @@
 <script lang="ts">
 	// Import the email constants
 	import { emailObfuscated, emailRaw } from '$lib/resume';
+	import type { PageData } from './$types';
+
+	const { data } = $props<{ data: PageData }>();
+
+	// Use $derived for reactive computation
+	const recentPosts = $derived(data.recentPosts || []);
 </script>
 
 <!-- About Section -->
 <section class="mb-12 space-y-4 md:mb-12">
-	<h2 class="text-xl font-semibold text-gray-900 md:text-2xl">About Me</h2>
+	<div class="flex items-center gap-4">
+		<h2 class="flex-shrink-0 text-2xl font-semibold text-gray-900">About Me</h2>
+		<hr class="w-full flex-grow border-t-2 border-gray-200" />
+	</div>
 	<p class="text-justify text-base leading-relaxed text-gray-700 md:text-lg">
 		👋🏼 Hey there! I'm Matt, a <strong>software engineer</strong>, <strong>musician</strong>, and
 		<strong>silly goose 🪿</strong> rooted in Kansas City.
@@ -22,7 +31,10 @@
 
 <!-- Projects Section -->
 <section class="mb-12 space-y-4 md:mb-12">
-	<h2 class="text-xl font-semibold text-gray-900 md:text-2xl">Projects</h2>
+	<div class="flex items-center gap-4">
+		<h2 class="flex-shrink-0 text-2xl font-semibold text-gray-900">Projects</h2>
+		<hr class="w-full flex-grow border-t-2 border-gray-200" />
+	</div>
 	<ul class="space-y-6">
 		<!-- Project: mattcook.io -->
 		<li class="space-y-1">
@@ -80,9 +92,42 @@
 	</ul>
 </section>
 
+<!-- Recent Posts Section -->
+{#if recentPosts.length > 0}
+	<section class="mb-12 space-y-4 md:mb-12">
+		<div class="flex items-center gap-4">
+			<h2 class="flex-shrink-0 text-2xl font-semibold text-gray-900">Recent Posts</h2>
+			<hr class="w-full flex-grow border-t-2 border-gray-200" />
+		</div>
+		<ul class="space-y-4">
+			{#each recentPosts as post}
+				<li class="space-y-1">
+					<a href={`/blog/${post.slug}`}>
+						<h3
+							class="text-lg font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-800"
+						>
+							{post.title}
+						</h3>
+					</a>
+					<p class="text-sm text-gray-500">{post.formattedDate}</p>
+					{#if post.description}
+						<p class="text-base text-gray-700">{post.description}</p>
+					{/if}
+				</li>
+			{/each}
+		</ul>
+		<a href="/blog" class="text-sm text-blue-600 transition-colors duration-200 hover:text-blue-800"
+			>View all posts &rarr;</a
+		>
+	</section>
+{/if}
+
 <!-- Connect Section -->
 <section class="space-y-4">
-	<h2 class="text-xl font-semibold text-gray-900 md:text-2xl">Connect</h2>
+	<div class="flex items-center gap-4">
+		<h2 class="flex-shrink-0 text-2xl font-semibold text-gray-900">Connect</h2>
+		<hr class="w-full flex-grow border-t-2 border-gray-200" />
+	</div>
 	<div class="flex flex-wrap gap-x-6 gap-y-2">
 		<a
 			href="https://github.com/mattcookio"

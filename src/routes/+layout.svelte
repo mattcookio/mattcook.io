@@ -3,8 +3,10 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import '../app.css';
+	import type { LayoutData } from './$types';
+	// Import LayoutData
 
-	let { children } = $props();
+	const { children, data } = $props<{ children: any; data: LayoutData }>(); // Get data prop
 
 	// Handle client-side SPA redirection after GitHub Pages 404 fallback
 	onMount(() => {
@@ -36,11 +38,14 @@
 				<img src="/me.png" alt="Matt Cook pixel art" class="h-full w-full object-cover" />
 			</div>
 			<div class="flex flex-col items-center text-center sm:items-start sm:text-left">
-				<h1 class="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl">Matt Cook</h1>
+				<h1 class="text-3xl font-bold text-gray-900 md:text-4xl">Matt Cook</h1>
 				<nav class="mt-2">
 					<ul class="flex space-x-4 text-lg">
 						<li><a href="/" class="text-blue-600 hover:underline">Home</a></li>
 						<li><a href="/resume" class="text-blue-600 hover:underline">Resume</a></li>
+						{#if data.publishedPostCount > 0}
+							<li><a href="/blog" class="text-blue-600 hover:underline">Blog</a></li>
+						{/if}
 					</ul>
 				</nav>
 			</div>
