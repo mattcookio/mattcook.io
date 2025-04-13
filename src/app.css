@@ -1,6 +1,6 @@
-@theme {
-	--font-family-sans: 'IBM Plex Sans', theme('fontFamily.sans'); /* Add IBM Plex Sans */
-	/* --font-family-mono: 'IBM Plex Mono', theme('fontFamily.mono'); Removed Mono */
-}
-
 @import 'tailwindcss';
+
+/* Apply the font directly to the body element */
+body {
+	font-family: 'Inter', sans-serif; /* Use sans-serif as a generic fallback */
+}

@@ -19,6 +19,15 @@
 	});
 </script>
 
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+		rel="stylesheet"
+	/>
+</svelte:head>
+
 <div class="flex min-h-screen flex-col bg-white text-gray-800">
 	<header class="mx-auto w-full max-w-4xl space-y-4 px-4 pt-12 sm:px-6 md:pt-20 lg:px-8">
 		<div class="flex flex-col items-center gap-4 sm:flex-row sm:items-center md:gap-6">
