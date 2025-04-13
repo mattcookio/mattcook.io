@@ -120,7 +120,6 @@
 	/>
 </svelte:head>
 
-<h1 class="mb-2 text-3xl font-bold text-gray-900">Matt Cook</h1>
 <div class="mb-6 flex flex-col text-lg text-gray-600 sm:flex-row sm:gap-4">
 	<span>{location}</span>
 	<a href={`mailto:${emailRaw}`} class="text-blue-600 hover:underline">
