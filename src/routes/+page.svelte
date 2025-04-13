@@ -10,18 +10,6 @@
 		👋🏼 Hey there! I'm Matt, a <strong>software engineer</strong>, <strong>musician</strong>, and
 		<strong>silly goose 🪿</strong> rooted in Kansas City.
 	</p>
-	<p class="text-justify text-base leading-relaxed text-gray-700 md:text-lg">
-		I love
-		<i class="devicon-svelte-plain colored mr-2 align-middle" title="Svelte"></i>Svelte,
-		<i class="devicon-react-original colored mr-2 align-middle" title="React"></i>React,
-		<i class="devicon-vuejs-plain colored mr-2 align-middle" title="Vue"></i>Vue,
-		<i class="devicon-nestjs-plain colored mr-2 align-middle" title="NestJS"></i>NestJS,
-		<i class="devicon-go-plain colored mr-2 align-middle" title="Go"></i>Go,
-		<i class="devicon-neovim-plain colored mr-2 align-middle" title="Neovim"></i>Neovim,
-		<i class="devicon-typescript-plain colored mr-2 align-middle" title="TypeScript"></i>TypeScript,
-		<i class="devicon-arduino-plain colored mr-2 align-middle" title="Arduino"></i>Arduino, and more
-		generally building cool things.
-	</p>
 	<p class="mt-4 text-justify text-base leading-relaxed text-gray-700 md:text-lg">
 		Currently building <a
 			href="https://studiokit.io"
