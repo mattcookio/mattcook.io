@@ -26,7 +26,7 @@
 	<ul class="space-y-6">
 		<!-- Project: mattcook.io -->
 		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">mattcook.io</h3>
+			<h3 class="text-lg font-semibold text-gray-800">🌐 mattcook.io</h3>
 			<p class="text-gray-600">You're looking at it!</p>
 			<a
 				href="https://github.com/mattcookio/mattcook.io"
@@ -39,8 +39,8 @@
 
 		<!-- Project 1: pivot.nvim -->
 		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">pivot.nvim</h3>
-			<p class="text-gray-600">🪄 Intelligent buffer and window management for Neovim.</p>
+			<h3 class="text-lg font-semibold text-gray-800">🪄 pivot.nvim</h3>
+			<p class="text-gray-600">Intelligent buffer and window management for Neovim.</p>
 			<a
 				href="https://github.com/mattcookio/pivot.nvim"
 				target="_blank"
@@ -52,7 +52,7 @@
 
 		<!-- Project 2: emojilang -->
 		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">emojilang</h3>
+			<h3 class="text-lg font-semibold text-gray-800">😀 emojilang</h3>
 			<p class="text-gray-600">
 				A stupid, minimal compiled programming language written in typescript that uses emojis.
 			</p>
@@ -67,7 +67,7 @@
 
 		<!-- Project 3: ConfiGREP -->
 		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">ConfiGREP 🔍</h3>
+			<h3 class="text-lg font-semibold text-gray-800">🔍 ConfiGREP</h3>
 			<p class="text-gray-600">A CLI tool for exploring configuration files. Auto-discovers .env, .json, .yaml, .toml, .ini files and presents them in a clean tree structure with interactive browsing and search.</p>
 			<a
 				href="https://github.com/mattcookio/configrep"
@@ -80,7 +80,7 @@
 
 		<!-- Project 4: dotfiles -->
 		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">dotfiles</h3>
+			<h3 class="text-lg font-semibold text-gray-800">⚙️ dotfiles</h3>
 			<p class="text-gray-600">My dotfiles, environment setup scripts, Neovim stuff, etc.</p>
 			<a
 				href="https://github.com/mattcookio/dotfiles"
