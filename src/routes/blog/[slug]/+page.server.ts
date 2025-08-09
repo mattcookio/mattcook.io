@@ -5,7 +5,7 @@ import { marked } from 'marked';
 import path from 'path';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
-export const prerender = false;
+export const prerender = true;
 
 export const entries: EntryGenerator = () => {
 	const postsDir = path.resolve('src/lib/posts');
