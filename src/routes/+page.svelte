@@ -36,19 +36,6 @@
 		<hr class="w-full flex-grow border-t-2 border-gray-200" />
 	</div>
 	<ul class="space-y-6">
-		<!-- Project: mattcook.io -->
-		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">mattcook.io</h3>
-			<p class="text-gray-600">You're looking at it!</p>
-			<a
-				href="https://github.com/mattcookio/mattcook.io"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text-sm text-blue-600 transition-colors duration-200 hover:text-blue-800"
-				>View on GitHub &rarr;</a
-			>
-		</li>
-
 		<!-- Project 1: pivot.nvim -->
 		<li class="space-y-1">
 			<h3 class="text-lg font-semibold text-gray-800">pivot.nvim</h3>
