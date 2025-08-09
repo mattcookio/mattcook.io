@@ -65,9 +65,9 @@
 			>
 		</li>
 
-		<!-- Project 3: ConfiGREP -->
+		<!-- Project 3: configrep -->
 		<li class="space-y-1">
-			<h3 class="text-lg font-semibold text-gray-800">🔍 ConfiGREP</h3>
+			<h3 class="text-lg font-semibold text-gray-800">🔍 configrep</h3>
 			<p class="text-gray-600">A CLI tool for exploring configuration files. Auto-discovers .env, .json, .yaml, .toml, .ini files and presents them in a clean tree structure with interactive browsing and search.</p>
 			<a
 				href="https://github.com/mattcookio/configrep"
