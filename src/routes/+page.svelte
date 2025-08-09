@@ -77,7 +77,20 @@
 			>
 		</li>
 
-		<!-- Project 3: dotfiles -->
+		<!-- Project 3: ConfiGREP -->
+		<li class="space-y-1">
+			<h3 class="text-lg font-semibold text-gray-800">ConfiGREP 🔍</h3>
+			<p class="text-gray-600">A CLI tool for exploring configuration files. Auto-discovers .env, .json, .yaml, .toml, .ini files and presents them in a clean tree structure with interactive browsing and search.</p>
+			<a
+				href="https://github.com/mattcookio/configrep"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-sm text-blue-600 transition-colors duration-200 hover:text-blue-800"
+				>View on GitHub &rarr;</a
+			>
+		</li>
+
+		<!-- Project 4: dotfiles -->
 		<li class="space-y-1">
 			<h3 class="text-lg font-semibold text-gray-800">dotfiles</h3>
 			<p class="text-gray-600">My dotfiles, environment setup scripts, Neovim stuff, etc.</p>
